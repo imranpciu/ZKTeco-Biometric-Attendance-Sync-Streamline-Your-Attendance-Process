@@ -42,8 +42,6 @@ ZKTeco Biometric Attendance Sync is a Python script designed for synchronizing a
 **Additional information:** You can convert the Python script into an executable file, such as '**zkteco-attendance-sync.exe**,' using the following command: '**pyinstaller --onefile zkteco-attendance-sync.py**.
 
 
-# Logging
-Detailed logs are recorded in the "_**transactions-date.log**_" file.
 # Contributing
 Contributions to this project are welcome. You can fork the repository, make improvements, and create a pull request.
   
