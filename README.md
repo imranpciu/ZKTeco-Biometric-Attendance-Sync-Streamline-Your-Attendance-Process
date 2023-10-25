@@ -2,7 +2,7 @@
 Simplify attendance management with the 'ZKTeco Biometric Attendance Sync' Python script. Tested with ZKTeco F18 and K40 models, effortlessly sync data from your biometric devices to your HR system.
 
 # Overview
-ZKTeco Biometric Attendance Sync is a Python script designed for synchronizing attendance data from ZK biometric attendance devices to an external API. It connects to a ZK device over the network, fetches attendance logs, stores them in a local SQLite database, and then uploads the attendance data to a specified API endpoint.This project is an extended version of [zkconnect](https://github.com/sowrensen/zkconnect) by [@sowrensen](https://github.com/sowrensen).
+ZKTeco Biometric Attendance Sync is a Python script designed for synchronizing attendance data from ZKTeco biometric attendance devices to an external API. It connects to a ZKTeco device over the network, fetches attendance logs, stores them in a local SQLite database, and then uploads the attendance data to a specified API endpoint. This project is an upgraded version of the [zkconnect](https://github.com/sowrensen/zkconnect) project created by[@sowrensen](https://github.com/sowrensen). In sowrensen project, it could only get real-time data and send it to an API. But now, this program can collect past data, store it in a database, and also keep sending real-time data to the API without using any config.yaml file.
 
 # Features
   * Fetches attendance data from ZK biometric devices.
@@ -32,7 +32,7 @@ ZKTeco Biometric Attendance Sync is a Python script designed for synchronizing a
      ```bash
      cd ZKTeco-Biometric-Attendance-Sync-Streamline-Your-Attendance-Process
      ```
-  3. Install virtual enviroment using (Any Python version):
+  3. Install virtual enviroment using **(Any Python version)**:
      ```bash
      pipenv --python 3.9.12
      ```
@@ -57,8 +57,13 @@ ZKTeco Biometric Attendance Sync is a Python script designed for synchronizing a
      
 **Note**: The script will connect to your ZKTeco device, fetch attendance logs, store them in the local SQLite database, and then upload the data to the specified API. The script will run continuously to monitor and synchronize attendance data.
 
-**Additional information:** You can convert the Python script into an executable file, such as '**zkteco-attendance-sync.exe**,' using the following command: '**pyinstaller --onefile zkteco-attendance-sync.py**.
+**Additional information:** You can convert the Python script into an executable file, such as '**zkteco-attendance-sync.exe**,' using the following command: 
+```bash
+pyinstaller --onefile zkteco-attendance-sync.py
+```
 
+# Logging
+The project uses logging to record events, errors, and information during its execution. By default, it creates a log file with a date-wise format to capture relevant details.
 
 # Contributing
 Contributions to this project are welcome. You can fork the repository, make improvements, and create a pull request.
