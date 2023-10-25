@@ -2,7 +2,7 @@
 Simplify attendance management with the 'ZKTeco Biometric Attendance Sync' Python script. Tested with ZKTeco F18 and K40 models, effortlessly sync data from your biometric devices to your HR system.
 
 # Overview
-ZKTeco Biometric Attendance Sync is a Python script designed for synchronizing attendance data from ZKTeco biometric attendance devices to an external API. It connects to a ZKTeco device over the network, fetches attendance logs, stores them in a local SQLite database, and then uploads the attendance data to a specified API endpoint. This project is an upgraded version of the [zkconnect](https://github.com/sowrensen/zkconnect) project created by[@sowrensen](https://github.com/sowrensen). In sowrensen project, it could only get real-time data and send it to an API. But now, this program can collect past data, store it in a database, and also keep sending real-time data to the API without using any config.yaml file.
+ZKTeco Biometric Attendance Sync is a Python script designed for synchronizing attendance data from ZKTeco biometric attendance devices to an external API. It connects to a ZKTeco device over the network, fetches attendance logs, stores them in a local SQLite database, and then uploads the attendance data to a specified API endpoint. This project is an upgraded version of the [zkconnect](https://github.com/sowrensen/zkconnect) project created by [@sowrensen](https://github.com/sowrensen). In sowrensen project, it could only get real-time data and send it to an API. But now, this program can collect past data, store it in a database, and also keep sending real-time data to the API without using any config.yaml file.
 
 # Features
   * Fetches attendance data from ZK biometric devices.
