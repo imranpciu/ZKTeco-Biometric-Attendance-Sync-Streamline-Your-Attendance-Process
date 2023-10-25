@@ -28,19 +28,32 @@ ZKTeco Biometric Attendance Sync is a Python script designed for synchronizing a
      ```bash
      git clone
      ```
-  3. Navigate to the project directory:
+  2. Navigate to the project directory:
      ```bash
-     cd ZKTeco-Biometric-Attendance-Sync-Streamline-Your-Attendance-Process  
-  5. Install virtual enviroment using:  "_**pipenv --python 3.9.12**_"(or any version)
-  6. Start virtual environment using: "_**pipenv shell**_"
-  7. Install the required Python packages using pip: "_**pip install -r requirements.txt**_"
-  8. Open the zk_attendance_sync.py script and configure the following parameters in the script:
+     cd ZKTeco-Biometric-Attendance-Sync-Streamline-Your-Attendance-Process
+     ```
+  3. Install virtual enviroment using (Any Python version):
+     ```bash
+     pipenv --python 3.9.12
+     ```
+  4. Start virtual environment using:
+     ```bash
+     pipenv shell
+     ```
+  5. Install the required Python packages using pip:
+     ```bash
+      pip install -r requirements.txt
+     ```
+  6. Open the zk_attendance_sync.py script and configure the following parameters in the script:
      >> **HOST**: The IP address or hostname of your ZK biometric attendance device. Ex: "**_HOST = '192.168.10.121'_**"
      
      >> **PORT**: The port number for your ZK device. Ex: "**_PORT = 4370_**"
      
      >> **ENDPOINT**: The URL of the remote API where attendance data will be sent. Ex: "**_https://hr.example.com/api/attendance/update_**"
-  9. Run the script: "_**python zk_attendance_sync.py**_"
+  7. Run the script:
+      ```bash
+      python zkteco_attendance_sync.py
+      ```
      
 **Note**: The script will connect to your ZKTeco device, fetch attendance logs, store them in the local SQLite database, and then upload the data to the specified API. The script will run continuously to monitor and synchronize attendance data.
 
