@@ -13,9 +13,9 @@ import time
 DB_FILENAME = 'zk_teco_data.db'
 
 # Hardcoded host, port, and endpoint
-HOST = '192.168.10.244'
+HOST = '192.168.0.1'
 PORT = 4370
-ENDPOINT = 'https://hr.thelabquest.com/api/attendance/update'
+ENDPOINT = 'https://hr.example.com/update'
 
 # Function to create a date-wise log file name
 def getLogFileName():
